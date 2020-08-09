@@ -5,8 +5,6 @@ pipeline {
       steps {
         container(name: 'build') {
           sh './test.sh'
-          sh 'cat Jenkinsfile'
-          sh 'docker version'
         }
 
       }
