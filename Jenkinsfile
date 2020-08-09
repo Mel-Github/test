@@ -3,7 +3,10 @@ pipeline {
   stages {
     stage('Script') {
       steps {
-        sh './test.sh'
+        container('build') { 
+          sh './test.sh'
+          docker version
+        }
       }
     }
 
