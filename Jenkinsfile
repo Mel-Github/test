@@ -3,10 +3,12 @@ pipeline {
   stages {
     stage('Script') {
       steps {
-        container('build') { 
+        container(name: 'build') {
           sh './test.sh'
+          sh 'cat Jenkinsfile'
           docker version
         }
+
       }
     }
 
