@@ -5,6 +5,7 @@ pipeline {
       steps {
         container(name: 'build') {
           sh './test.sh'
+          sh 'docker version'
         }
 
       }
