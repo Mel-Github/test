@@ -6,7 +6,7 @@ pipeline {
         container(name: 'build') {
           sh './test.sh'
           sh 'cat Jenkinsfile'
-          docker version
+          sh 'docker version'
         }
 
       }
