@@ -26,7 +26,7 @@ podTemplate(label: 'mypod', serviceAccount: 'jenkins', containers: [
                 sh 'ls -l'
                 sh 'ls -lh ${WORKSPACE}/test.sh'
                 sh 'cat ${WORKSPACE}/test.sh'
-                sh 'sleep 4000'
+                //sh 'sleep 4000'
                // sh "${WORKSPACE}/test.sh"
                 script {
                     sh '${WORKSPACE}/test.sh'
