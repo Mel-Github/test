@@ -1,7 +1,7 @@
 podTemplate(label: 'mypod', serviceAccount: 'jenkins', containers: [ 
     containerTemplate(
       name: 'docker', 
-      image: 'docker', 
+      image: 'node:alpine', 
       command: 'cat', 
       resourceRequestCpu: '100m',
       resourceLimitCpu: '300m',
